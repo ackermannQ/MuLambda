@@ -1,13 +1,15 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Simulation : MonoBehaviour
 {
-    public GameObject[] individuals;
+    public Population pop;
+    public List<GameObject> individuals;
     void Start()
     {
         var mu = 5;
         var lambda = 3;
-        //individuals = Population.Initialize(mu, lambda);
+        individuals = pop.Initialize(mu, lambda);
 
         //individuals = individuals.OrderByDescending(i => i.Evaluate()).ToArray();
 
