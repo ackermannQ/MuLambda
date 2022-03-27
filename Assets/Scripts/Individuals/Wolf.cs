@@ -13,5 +13,8 @@ namespace Assets.Individuals
         {
             return 1f;
         }
+        public override void Roaming()
+        {
+        }
     }
 }

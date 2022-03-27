@@ -1,24 +1,24 @@
-using Assets.Individuals;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Population : MonoBehaviour
 {
-    public GameObject[] rabbits;
-    public GameObject[] Initialize(int mu, int lambda)
+    public GameObject rabbitPrefab;
+
+    public List<GameObject> rabbits;
+    public List<GameObject> Initialize(int mu, int lambda)
     {
         var totalPopulation = mu + lambda;
-        var individuals = new Rabbit[totalPopulation];
 
         for (var i = 0; i < totalPopulation; i++)
         {
-            individuals[i] = new Rabbit();
+            rabbits.Add(Instantiate(rabbitPrefab));
         }
 
-        //return Shuffle(individuals);
-        return rabbits;
+        return Shuffle(rabbits);
     }
 
-    public Rabbit[] Shuffle(Rabbit[] individuals)
+    public List<GameObject> Shuffle(List<GameObject> individuals)
     {
         // Shuffle the individuals to escape loss of gradient
         return individuals;
