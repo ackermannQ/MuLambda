@@ -200,7 +200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1823354914348401047}
   - component: {fileID: 7154562200610708022}
-  - component: {fileID: 3208690151488710596}
+  - component: {fileID: 912968538180292905}
   m_Layer: 0
   m_Name: Rabbit
   m_TagString: Untagged
@@ -215,7 +215,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7033396000381362694}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.003490679, z: 0, w: 0.9999939}
   m_LocalPosition: {x: 0.11101484, y: 1.006, z: -5.020401}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -224,7 +224,7 @@ Transform:
   - {fileID: 8268859891917436672}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0.4, z: 0}
 --- !u!114 &7154562200610708022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,20 +238,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
+  currentSpeed: 0
   genre: 0
   fitScore: 0
---- !u!114 &3208690151488710596
-MonoBehaviour:
+  randomRotation: 0
+  prefab: {fileID: 3897796028141153062, guid: 4539e12d98db23a4399a8713dbe11bba, type: 3}
+--- !u!65 &912968538180292905
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7033396000381362694}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a49b6bd4a77d51468a24d1992314626, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 2
+  m_Size: {x: 0.56731904, y: 0.547861, z: 0.29747343}
+  m_Center: {x: 0.005991683, y: -0.22606951, z: 0.03411543}
 --- !u!1 &7869828521739223722
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,7 +346,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7869828521739223722}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}

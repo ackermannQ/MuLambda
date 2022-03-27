@@ -6,6 +6,7 @@ public class Population : MonoBehaviour
     public GameObject rabbitPrefab;
 
     public List<GameObject> rabbits;
+
     public List<GameObject> Initialize(int mu, int lambda)
     {
         var totalPopulation = mu + lambda;
